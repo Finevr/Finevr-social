@@ -1,41 +1,19 @@
-HTML Code Generated
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Social Website</title>
-    <style>
-        body {
-            background-color: black;
-            color: #00FF00;
-        }
-    </style>
+	<title>Social Website</title>
+	<style>
+		body {
+			background-color: black;
+			color: #39FF14;
+		}
+	</style>
 </head>
 <body>
-    <h1>Finevrs Social website</h1>
-    <div>
-        <h2>Welcome!</h2>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username"><br><br>
-            <label for="message">Message:</label>
-            <input type="text" id="message" name="message"><br><br>
-            <input type="submit" value="Send">
-        </form>
-        <div id="chatbox"></div>
-    </div>
-    <script>
-        function sendMessage() {
-            var username = document.getElementById("username").value;
-            var message = document.getElementById("message").value;
-            var d = new Date();
-            var time = d.getHours() + ":" + d.getMinutes();
-            document.getElementById("chatbox").innerHTML += "<p>" + username + " (" + time + "): " + message + "</p>";
-            document.getElementById("message").value = "";
-        }
-        document.querySelector("form").addEventListener("submit", function (event) {
-            event.preventDefault();
-            sendMessage();
-        });
-    </script>
+	<h1>OpinionTopic</h1>
+	<div>
+		<h2>Welcome!</h2>
+		<textarea></textarea>
+	</div>
 </body>
 </html>
