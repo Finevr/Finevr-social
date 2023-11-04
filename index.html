@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sign In Page</title>
+    <title>Sign In</title>
   </head>
   <body>
+    <h1>Sign In</h1>
     <form>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required><br><br>
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required><br><br>
-      <input type="submit" value="Sign In">
+      <button type="submit">Sign In</button>
     </form>
-    <script>
-      function signIn() {
-        document.getElementById("signInForm").style.display = "none";
-        window.location.href = "messaging.html";
-      }
-      document.querySelector("form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        signIn();
-      });
-    </script>
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Messaging Website</title>
+  </head>
+  <body>
+    <h1>Welcome to the Messaging Website</h1>
+    <p>You are now signed in!</p>
+    <h2>Friends</h2>
+    <ul>
+      <li><a href="privatechat.html">Friend 1</a></li>
+      <li><a href="privatechat.html">Friend 2</a></li>
+      <li><a href="privatechat.html">Friend 3</a></li>
+    </ul>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Private Chat</title>
+  </head>
+  <body>
+    <h1>Private Chat</h1>
+    <p>Chatting with Friend 1</p>
+    <form>
+      <label for="message">Message:</label>
+      <input type="text" id="message" name="message" required><br><br>
+      <button type="submit">Send</button>
+    </form>
+    <p>Friend 1: Hi there!</p>
   </body>
 </html>
