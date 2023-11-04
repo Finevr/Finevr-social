@@ -1,6 +1,3 @@
-Social Website
-language-html
- Copy code
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,50 +11,50 @@ language-html
         font-size: 36px;
         text-align: center;
       }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .message-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
       .message-box {
-        width: 500px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #1c1c1c;
-        border-radius: 10px;
-        box-shadow: 0 0 10px #39ff14;
-      }
-      .message {
-        margin-bottom: 10px;
-        padding: 10px;
-        background-color: #39ff14;
+        width: 400px;
+        height: 50px;
+        border: 2px solid #39ff14;
         border-radius: 5px;
-      }
-      input[type="text"] {
-        width: 100%;
         padding: 10px;
         margin-bottom: 10px;
-        border-radius: 5px;
-        border: none;
       }
-      input[type="submit"] {
+      .send-button {
         background-color: #39ff14;
         color: black;
-        padding: 10px 20px;
         border: none;
         border-radius: 5px;
+        padding: 10px;
         cursor: pointer;
+      }
+      .send-button:hover {
+        background-color: black;
+        color: #39ff14;
       }
     </style>
   </head>
   <body>
-    <h1>OpinionTopic</h1>
-    <div class="message-box">
-      <h2>Welcome!</h2>
-      <form>
-        <input type="text" placeholder="Type your message here...">
-        <input type="submit" value="Send">
-      </form>
-      <div class="conversation">
-        <div class="message">Hello!</div>
-        <div class="message">How are you?</div>
-        <div class="message">I'm good, thanks for asking. How about you?</div>
+    <div class="container">
+      <h1>OpinionTopic</h1>
+      <div class="message-container">
+        <div class="message-box"></div>
+        <button class="send-button">Send</button>
       </div>
+      <div class="chat-container"></div>
     </div>
   </body>
 </html>
